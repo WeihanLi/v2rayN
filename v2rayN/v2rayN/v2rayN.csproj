@@ -30,46 +30,14 @@
 	</ItemGroup>
 	
 	<ItemGroup>       
-        <AdditionalFiles Include="app.manifest" />       
-        <EmbeddedResource Include="Sample\tun_singbox">
-			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Sample\custom_routing_black">
-          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>  
-        <EmbeddedResource Include="Sample\custom_routing_global">
-          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>  
-        <EmbeddedResource Include="Sample\custom_routing_locked">
-          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>  
-        <EmbeddedResource Include="Sample\custom_routing_rules">
-          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>  
-        <EmbeddedResource Include="Sample\custom_routing_white">
-          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>  
-        <EmbeddedResource Include="Sample\SampleClientConfig">
-          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>  
-        <EmbeddedResource Include="Sample\SampleHttprequest">
-          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>  
-        <EmbeddedResource Include="Sample\SampleHttpresponse">
-          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>  
-        <EmbeddedResource Include="Sample\SampleInbound">
-          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>  
-        <EmbeddedResource Include="Sample\SampleServerConfig">
+        <AdditionalFiles Include="app.manifest" />
+        <EmbeddedResource Include="Sample\*">
           <CopyToOutputDirectory>Never</CopyToOutputDirectory>
         </EmbeddedResource>
         <EmbeddedResource Include="v2rayN.ico">
           <CopyToOutputDirectory>Never</CopyToOutputDirectory>
         </EmbeddedResource>
-        <Resource Include="Resources\NotifyIcon1.ico" />
-        <Resource Include="Resources\NotifyIcon2.ico" />
-        <Resource Include="Resources\NotifyIcon3.ico" />
+        <Resource Include="Resources\*" />
         <Resource Include="v2rayN.ico">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Resource>
@@ -93,10 +61,7 @@
 	    <Generator>PublicResXFileCodeGenerator</Generator>
 	    <LastGenOutput>ResUI.Designer.cs</LastGenOutput>
 	  </EmbeddedResource>
-	  <EmbeddedResource Update="Resx\ResUI.zh-Hans.resx">
-	    <Generator>PublicResXFileCodeGenerator</Generator>
-	  </EmbeddedResource>
-	  <EmbeddedResource Update="Resx\ResUI.fa-Ir.resx">
+	  <EmbeddedResource Update="Resx\ResUI.*.resx">
 	    <Generator>PublicResXFileCodeGenerator</Generator>
 	  </EmbeddedResource>
 	</ItemGroup>
